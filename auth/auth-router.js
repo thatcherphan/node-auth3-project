@@ -34,7 +34,7 @@ router.post('/login', (req, res) => {
                     token: token
                 });
             } else {
-                res.status(401).json({message: "Invalid credentials"})
+                res.status(401).json({message: "You shall not pass! (invalid credential)"})
             }
         })
         .catch(err => {
